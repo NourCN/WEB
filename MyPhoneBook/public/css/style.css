@@ -1,0 +1,121 @@
+
+body{
+    background-color: #F8F9F9;
+   
+    
+}
+.search{
+    display: flex;
+    
+    flex-direction: row;
+    margin-left: 5%;
+  
+    margin-right: 5%;
+    background-image: url("../image/collab.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+    
+}
+
+
+.input-serach button{
+  
+    
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+.list-group{
+   margin: 20px;
+}
+.input-serach{
+    padding: 20px;
+    
+  
+}
+
+input{
+    display: flex;
+   
+   cursor: pointer;
+   margin-left: 10px;
+}
+input:hover{
+    background-color:#F4F6F6;
+}
+.search h2 {
+    text-align: center;
+}
+.search label{
+    margin-left: 20px;
+}
+.search input{
+    margin-left: 10px;
+}
+
+.create{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:space-around;
+    
+
+   
+}
+
+h2{
+    margin-left: 4%;
+    color:#000;
+    text-align: center;
+   
+}
+
+/*  */
+.image div {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    
+    border: solid;
+}
+
+button:active {
+    font-size: 20px;
+}
+
+.acceuil {
+    background-color: #1B4F72;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    color: #fff;
+
+}
+
+.header{
+    background-color: #154360  ;
+    margin: 10px;
+    padding: 20px;
+    border: solid;
+    border-radius: 20px;
+}
+.ic{
+
+display: flex;
+justify-content: center;
+margin-left: 10px;
+}
+.d-flex{
+    width: 70%;
+   margin-left: 15%;
+}
