@@ -1,0 +1,171 @@
+body {
+	display: flex;
+flex-direction:column;
+    font-family: Trebuchet MS, sans-serif;
+    background-image: url(img/fond.png);
+    box-shadow: 10px 10px 20px;
+    text-rendering: optimizeLegibility;;
+     
+}
+/*Menu titre*/
+
+.menu{
+	background-image: url(img/bandeau.jpg);background-repeat: no-repeat;background-size: 100% 350px;height: 350px;background-attachment: }
+nav ul{
+	display: flex;flex-direction: row;flex-wrap: wrap;
+	justify-content: center;border: solid;border-width: 0.5px;border-color: #7a7e8b; border-radius: 7px;
+	width: 70%;margin-left: auto;margin-right: auto;margin-top: 30px;
+
+}
+ul li{
+	margin: 10px;list-style-type: none;
+}
+li a{text-decoration-line: none;color: #7a7e8b;}
+
+.title{text-align: center; margin-top:50px; color: #7a7e8b; }
+
+/* introduction*/
+
+#intro{display : flex; justify-content: center;align-items: center;width: 25%;margin-left: auto;margin-right: auto;height: 40px;margin-top: -30px;
+background-color: #e3746d;font-size: 12px;color: #f7f7f8;}
+
+.intro_content{height: 450px;}
+
+
+/* detail*/
+#detail{display : flex; justify-content: center;align-items: center; width: 25%;margin-left: auto;margin-right: auto;height: 40px;margin-top: -30px;
+background-color: #ffffff;font-size: 12px;}
+
+.detail_content{display: flex;flex-direction: row;flex-wrap: wrap;width: 100%;margin-left: auto;margin-right: auto;justify-content: center;}
+
+.detail_content div {width: 40%;padding: 30px;}
+
+.detail_content div img{height: 30px;width: 30px;}
+
+.detail_content div p{margin-left: 30px;margin-top: -30px;}
+button {padding: 10px 30px;border-radius: 5px;margin-left: 10px;border: none;}
+
+/*galerie*/
+
+#galerie{display : flex; justify-content: center;align-items: center; width: 25%;margin-left: auto;margin-right: auto;height: 40px;margin-top: -30px;
+background-color: #ededed;font-size: 12px;}
+
+.photo{display: flex;flex-direction: row; flex-wrap: wrap;justify-content: center;margin-left: auto;margin-right: auto;padding: 10px}
+
+.photo div{width: 25%;margin: 10px;}
+
+.photo div img{width: 100%;}
+
+.photo div button{display: flex;justify-content: center;margin-left:auto;margin-right: auto;}
+
+.photo p{text-align: center;}
+
+/*PLUS LOIN*/
+
+#plusLoin{display : flex; justify-content: center;align-items: center;width: 25%;margin-left: auto;margin-right: auto;height: 40px;margin-top: -30px;
+background-color: #272a33;font-size: 12px;}
+
+.contact_content{display: flex;flex-direction: row;flex-wrap: wrap;width: 90%;margin-left: auto;margin-right: auto;justify-content: center;}
+
+.formulaire_content{display: flex; flex-direction: column; width: 50%;}
+
+.formulaire_content input{width: 45%;margin-top: 20px;border-radius: 4px;height: 25px;padding: 7px; }
+.formulaire_content textarea {padding: 10px;}
+
+
+.formulaire_content textarea{width: 94%;height: 200px;margin-top: 20px;border-radius: 4px;}
+
+.formulaire_content button{margin-left:0px;margin:;width: 38%;}
+
+.info_content{margin-top: 20px;width: 50%;display: flex;flex-direction: row;flex-wrap: wrap;}
+
+.info_content div{width: 50%;}
+
+.info_content div img{height: 30px;width: 30px;}
+
+.info_content p{;flex-direction: column;flex-wrap: wrap;;padding: 40px;margin-top: -60px;font-size: 12px;}
+
+/* ombrage et couleur texte*/
+
+#plusLoin ,#detail ,#galerie ,#intro{box-shadow: 0px -8px 7px #e0e0e0}
+
+.detail_content b,.photo b{color:#e3746d; }
+
+.detail_content p,.photo p,.allerPlusLoin p,{color: #7a7e8b;}
+
+
+.allerPlusLoin a,button,#plusLoin{color: #f7f7f8}
+.info_content b{color:#e3746d }
+.formulaire_content input,textarea{background-color:#cccccc }
+.allerPlusLoin p{color:#7a7e8b;}
+
+/*animation*/
+a
+{   
+	width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0.1s; /* Démarre au bout de 0,4s */
+}
+
+
+a:hover{background-color:#e3746d;border-radius:5px;padding: 5px;}
+
+.hover{border-radius:5px;padding: 5px;text-align: center;justify-content: center;box-shadow: 1px 8px 9px #5F8CA3; }
+
+
+
+
+/* jquery*/
+
+.PopinImage{width: 60%;height: 350px;position: absolute;margin-left: 15%;margin-right: 15%;margin-top: 100px;}
+
+ /*responsive*/
+@media(max-width: 480px){
+    .PopinImage{width: 450px;height:100px;position: absolute;margin-left: 0px; margin-top: 400px;}
+    .title{text-align: center; margin-top:150px;}
+    .detail_content div{display: flex;flex-direction: column;width: 100%;padding: 0px;text-align: center;margin-top: 20px;}
+   .photo div{width: 90%;margin: 0px;margin-top: 20px; margin-left: auto;margin-right: auto;}
+   #buttonIntro{width:90% ;}
+   .photo{display: flex;flex-direction: column;;justify-content: center;margin-left: auto;margin-right: auto;padding: 0px;}
+   .introduction{ height:650px; }
+   .menu {height: 500px;background-size: 100% 500px;}
+   .detail_button{display: flex;flex-direction: column; justify-content: center; border-radius: 3px;width: 80%;}
+#imgDetail{width: 100%}
+   .contact_content{display: flex;flex-direction: column;width: 90%;}
+
+    .formulaire_content{display: flex; flex-direction: column; width: 100%;}
+
+    .formulaire_content input{width: 95%;margin-top: 20px;border-radius: 4px;height: 25px;padding: 7px;margin-right: auto;margin-left: auto; }
+    .formulaire_content textarea {padding: 10px;}
+     .formulaire_content textarea{width: 94%;height: 150px;margin-top: 20px;border-radius: 4px;}
+
+    .formulaire_content button{ display: flex; flex-direction: column; margin-top: 10px; width: 95%;margin-left: auto;margin-right: auto;}
+  #plusLoin ,#detail ,#galerie ,#intro{text-align: center;font-size:10px;width: 150px;}
+  .info_content{margin-top: 20px;width: 100%;display: flex;flex-direction: column;flex-wrap: wrap;}
+
+.info_content div{width: 100%;}
+
+}
+@media (min-width: 481px) and (max-width: 780px){
+    .navigation{ width: 60%; }
+    #imgDetail{height: 10px;}
+
+    .formulaire_content{display: flex; flex-direction: column; width: 47%;}
+
+    .formulaire_content input{width: 44%;margin-top: 20px;border-radius: 4px;height: 10px;padding: 5px;margin-right: auto;margin-left: auto; }
+    .formulaire_content textarea {padding: 10px;}
+     .formulaire_content textarea{width: 91%;height: 100px;margin-top: 20px;border-radius: 4px;}
+
+    .formulaire_content button{ margin-left:0px;margin-top: 20px;width: 45%;height: 30px;text-align: left; font-size: 9px;justify-content: center;}
+
+  
+
+}
+
+
+
+
