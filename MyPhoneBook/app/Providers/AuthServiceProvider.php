@@ -26,7 +26,7 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //gate pour tester si le user a un role admin-> boolean retour true or false 
+        //definition des different access 
         Gate::define('access-admin', function(User $user){
             return $user->role === 'admin';
         });

@@ -30,19 +30,6 @@ class CreateCollaborateursTable extends Migration
             ->onUpdate('cascade');
             
         });
-    
-
-   /*      $input = [
-            'civilitie' => ['Female', 'Male','Non binaire'],
-        ];
-        
-        Validator::make($input, [
-            'civilitie' => [
-                'required',
-                'array',
-                Rule::in(['Female', 'Male','Non binaire']),
-            ],
-        ]); */
     }
 
 

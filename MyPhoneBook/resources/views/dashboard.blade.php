@@ -1,41 +1,15 @@
 <x-app-layout>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/dash.css">
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
     <style>
-        .image div {
-            margin-left: 20px;
-        }
-
-        img {
-            width: 300px;
-            height: 300px;
-            margin: 20px;
-            border: solid;
-        }
-
-        .acceuil {
-            background-image: url(/image/nature.jpeg)
-        }
-
-
-        button:active {
-            font-size: 20px;
-        }
-
-        .acceuil {
-            background-color: #1B4F72;
-        }
-
-        h1 {
-            display: flex;
-            justify-content: center;
-            margin: 30px
-        }
+    
 
     </style>
     <h1>Myphonebook</h1>
@@ -76,5 +50,5 @@
             </div>
         </div>
     </div>
-    <h1>NOUR - ALI @ETNA</h1>
+    <h1>NOUR @ETNA</h1>
 </x-app-layout>
